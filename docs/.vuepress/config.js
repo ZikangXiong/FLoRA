@@ -26,6 +26,7 @@ export default defineUserConfig({
         },
         plugins: {
             readingTime: false,
+            lastUpdated: false,
         },
     }),
     // other config options
