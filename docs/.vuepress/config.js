@@ -1,25 +1,35 @@
 import { defineUserConfig } from 'vuepress'
-import { defaultTheme } from '@vuepress/theme-default'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { hopeTheme } from "vuepress-theme-hope"
+import { path } from '@vuepress/utils'
 
 
 export default defineUserConfig({
     base: '/FLoRA/',
     bundler: viteBundler(),
-    theme: defaultTheme({
-        // default theme config
+    theme: hopeTheme({
         navbar: [
             {
                 text: 'Home',
                 link: '/',
             },
-            // Add more navbar items as needed
+            {
+                text: 'Scenarios',
+                link: '/scenarios/',
+            }
         ],
         sidebar: [
-            // Add sidebar items as needed
+
         ],
+        pageLayout: {
+            wide: true
+        },
+        plugins: {
+            readingTime: false,
+        },
     }),
     // other config options
-    title: 'Your Site Title',
-    description: 'Your site description',
+    title: 'FLoRA',
+    description: 'A Framework for Learning Scoring Rules in Autonomous Driving Planning Systems',
+    public: path.resolve(__dirname, './public'),
 })
