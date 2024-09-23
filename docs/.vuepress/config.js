@@ -2,6 +2,10 @@ import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from '@vuepress/theme-default'
 import { viteBundler } from '@vuepress/bundler-vite'
 
+module.exports = {
+    base: '/FLoRA/',
+}
+
 export default defineUserConfig({
     bundler: viteBundler(),
     theme: defaultTheme({
