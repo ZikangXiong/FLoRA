@@ -154,11 +154,34 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+# Dependencies
+node_modules/
 
+# VuePress build output
+docs/.vuepress/dist/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# OS generated files
 .DS_Store
+Thumbs.db
+
+# VuePress temporary files
+docs/.vuepress/.temp/
+docs/.vuepress/.cache/
+
+# Optional: ignore local environment files
+.env.local
+.env.*.local
