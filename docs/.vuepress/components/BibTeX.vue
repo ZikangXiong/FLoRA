@@ -6,11 +6,12 @@
 </template>
 
 <script setup>
-const bibtexContent = `@inproceedings{xiong24flora,
-    title={FLoRA: A Framework for Learning Scoring Rules in Autonomous Driving Planning Systems},
-    author={Zikang Xiong, Joe Eappen, and Suresh Jagannathan},
-    booktitle={Preprint},
-    year={2024},
+const bibtexContent = `@misc{xiong24flora,
+  title={FLoRA: A Framework for Learning Scoring Rules in Autonomous Driving Planning Systems},
+  author={Xiong, Zikang and Eappen, Joe and Jagannathan, Suresh},
+  year={2024},
+  primaryClass={cs.RO},
+  note={Preprint}
 }`
 </script>
 
