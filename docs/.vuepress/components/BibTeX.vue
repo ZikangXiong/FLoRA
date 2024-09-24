@@ -11,7 +11,7 @@ const bibtexContent = `@inproceedings{xiong24flora,
     author={Zikang Xiong, Joe Eappen, and Suresh Jagannathan},
     booktitle={Preprint},
     year={2024},
-  }`
+}`
 </script>
 
 <style scoped>
@@ -20,5 +20,15 @@ const bibtexContent = `@inproceedings{xiong24flora,
     padding: 1rem;
     border-radius: 4px;
     overflow-x: auto;
+    color: #333;
+    /* Dark text color for light mode */
+}
+
+@media (prefers-color-scheme: dark) {
+    .bibtex {
+        background-color: #2a2a2a;
+        color: #e0e0e0;
+        /* Light text color for dark mode */
+    }
 }
 </style>
