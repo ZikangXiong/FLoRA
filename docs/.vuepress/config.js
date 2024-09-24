@@ -1,35 +1,33 @@
 import { defineUserConfig } from 'vuepress'
+import { defaultTheme } from '@vuepress/theme-default'
 import { viteBundler } from '@vuepress/bundler-vite'
-import { hopeTheme } from "vuepress-theme-hope"
 import { path } from '@vuepress/utils'
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 
 
 export default defineUserConfig({
     base: '/FLoRA/',
     bundler: viteBundler(),
-    theme: hopeTheme({
+    theme: defaultTheme({
         navbar: [
             {
                 text: 'Home',
                 link: '/',
-            },
-            {
-                text: 'Scenarios',
-                link: '/scenarios/',
             }
         ],
-        sidebar: [
-
-        ],
-        pageLayout: {
-            wide: true
-        },
-        plugins: {
-            readingTime: false,
-            lastUpdated: false,
-        },
+        sidebar: [],
+        // disable updata time
+        lastUpdated: false,
+        // disable contributors
+        contributors: false,
+        // disable dark mode
+        darkMode: false,
     }),
-    // other config options
+    plugins: [
+        registerComponentsPlugin({
+            componentsDir: path.resolve(__dirname, './components'),
+        }),
+    ],
     title: 'FLoRA',
     description: 'A Framework for Learning Scoring Rules in Autonomous Driving Planning Systems',
     public: path.resolve(__dirname, './public'),

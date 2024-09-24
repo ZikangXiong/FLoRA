@@ -1,4 +1,18 @@
-# Hello VuePress
+---
+home: true
+heroText: FLoRA
+tagline: A Framework for Learning Scoring Rules in Autonomous Driving Planning Systems
+---
 
+<ButtonContainer />
 
-This is a test
+<VideoContainer src="/teaser.mp4" />
+
+## Scenarios
+
+<DemoGallery />
+
+## Citation
+
+<BibTeX />
+
