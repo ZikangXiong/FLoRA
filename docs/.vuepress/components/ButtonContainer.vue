@@ -8,7 +8,7 @@
 
 <script setup>
 const buttons = [
-    { text: 'PDF', href: 'https://xiong.zikang.me', class: 'pdf-button' },
+    { text: 'PDF', href: 'https://xiong.zikang.me/FLoRA/draft-v1.pdf', class: 'pdf-button' },
     { text: 'CODE', href: 'https://github.com/ZikangXiong/FLoRA', class: 'code-button' },
     { text: 'BIB', href: '#citation', class: 'bib-button' }
 ]
