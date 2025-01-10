@@ -13,15 +13,17 @@ export default defineUserConfig({
             {
                 text: 'Home',
                 link: '/',
+            },
+            {
+                text: 'Supplementary Material',
+                link: '/subpages/supplementary',
             }
         ],
         sidebar: [],
-        // disable updata time
         lastUpdated: false,
-        // disable contributors
         contributors: false,
-        // disable dark mode
-        darkMode: false,
+        colorMode: 'auto',
+        colorModeSwitch: true,
     }),
     plugins: [
         registerComponentsPlugin({
