@@ -3,6 +3,7 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { path } from '@vuepress/utils'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+import markdownItKatex from 'markdown-it-katex'
 
 
 export default defineUserConfig({
@@ -29,6 +30,15 @@ export default defineUserConfig({
         registerComponentsPlugin({
             componentsDir: path.resolve(__dirname, './components'),
         }),
+    ],
+    extendsMarkdown: (md) => {
+        md.use(markdownItKatex)
+    },
+    head: [
+        ['link', {
+            rel: 'stylesheet',
+            href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.css'
+        }]
     ],
     title: 'FLoRA',
     description: 'A Framework for Learning Scoring Rules in Autonomous Driving Planning Systems',

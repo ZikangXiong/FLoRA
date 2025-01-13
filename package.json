@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@vuepress/plugin-redirect": "^2.0.0-rc.51",
-    "@vuepress/theme-default": "^2.0.0-rc.49"
+    "@vuepress/theme-default": "^2.0.0-rc.49",
+    "markdown-it-katex": "^2.0.3"
   }
 }
