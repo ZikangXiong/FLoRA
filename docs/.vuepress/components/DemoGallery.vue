@@ -10,6 +10,10 @@
                 </select>
             </div>
 
+            <ul class="scenario-description">
+                <li>{{ scenarioDescriptions[activeDemo] }}</li>
+            </ul>
+
             <div class="video-gallery">
                 <div v-for="i in 3" :key="i" class="video-item">
                     <video width="300" controls :key="`video-${activeDemo}-${i}`" ref="videoRefs">
@@ -41,6 +45,18 @@ const demos = {
     'Stationary': 'Stationary',
     'Traversing': 'Traversing'
 }
+
+const scenarioDescriptions = {
+  'Change Lane': 'Vehicle executes a lane change maneuver between adjacent lanes',
+  'Following': 'Vehicle maintains a safe following distance behind a leading vehicle',
+  'Near Static': 'Vehicle navigates near static obstacles like parked cars',
+  'Near VRU': 'Vehicle is near Vulnerable Road Users (VRUs) like pedestrians or cyclists',
+  'Turn': 'Vehicle performs turning maneuvers at intersections',
+  'Stopping': 'Vehicle comes to a controlled stop',
+  'Starting': 'Vehicle initiates motion from a stationary position',
+  'Stationary': 'Vehicle maintains a stable stationary position',
+  'Traversing': 'Vehicle traverses through intersections or complex road sections'
+};
 
 const readScenarioData = async () => {
     try {
