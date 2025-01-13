@@ -20,7 +20,6 @@ export default defineUserConfig({
                 link: '/subpages/supplementary',
             }
         ],
-        sidebar: [],
         lastUpdated: false,
         contributors: false,
         colorMode: 'auto',
