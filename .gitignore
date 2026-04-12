@@ -51,6 +51,8 @@ coverage.xml
 env/
 venv/
 ENV/
+env.bak/
+venv.bak/
 
 # IDEs
 .vscode/
@@ -67,3 +69,16 @@ ENV/
 
 # ruff
 .ruff_cache/
+
+# Node / docs
+node_modules/
+docs/.vuepress/dist/
+docs/.vuepress/.temp/
+docs/.vuepress/.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
